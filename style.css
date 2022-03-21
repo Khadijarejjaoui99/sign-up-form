@@ -89,6 +89,10 @@ button[type="submit"] {
   cursor: pointer;
   margin-bottom: 0.5rem;
 }
+button[type="submit"]:hover {
+  background-color: hsl(154, 91%, 39%);
+  transition: 0.3s ease;
+}
 form p {
   color: hsl(246, 25%, 77%);
   font-size: 0.7rem;

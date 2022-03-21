@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  background: hsl(0, 100%, 74%) url(images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  line-height: 1.25;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+.info__container > h1 {
+  color: hsl(0, 0%, 100%);
+}
+.info__container > p {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: hsl(0, 0%, 93%);
+  padding: 0 2rem;
+}
+.box {
+  width: 80%;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(248, 32%, 49%);
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  margin: 1.5rem auto;
+  box-shadow: 0 5px 0 1px rgba(0, 0, 0, 0.19);
+}
+
+.box > span {
+  font-weight: 400;
+  color: hsl(0, 0%, 93%);
+}
+form {
+  margin: auto;
+  width: 80%;
+  background-color: #fff;
+  padding: 1.3rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 0 1px rgba(0, 0, 0, 0.19);
+}
+
+input {
+  display: block;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 1.5rem;
+  border-radius: 0.3rem;
+  padding: 14px 20px;
+  border: 1px solid hsl(246, 25%, 77%);
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+input:focus {
+  outline: none !important;
+  border-color: hsl(248, 32%, 49%);
+}
+
+button[type="submit"] {
+  width: 90%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: hsl(154, 59%, 51%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+form p {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0 2rem;
+}
+form p > a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  cursor: pointer;
+}
+.form__control {
+  position: relative;
+}
+
+.form__control.success input {
+  border-color: hsl(154, 59%, 51%);
+}
+.form__control.error input {
+  border-color: hsl(0, 100%, 74%);
+}
+.form__control i {
+  position: absolute;
+  top: 1rem;
+  right: 2.5rem;
+  display: none;
+}
+.form__control.success i.fa-check-circle {
+  display: block;
+  color: hsl(154, 59%, 51%);
+}
+.form__control.error i.fa-exclamation-circle {
+  display: block;
+  color: hsl(0, 100%, 74%);
+}
+.form__control small {
+  position: absolute;
+  left: 1.7rem;
+  bottom: -1.3rem;
+  visibility: hidden;
+}
+
+.form__control.success small {
+  visibility: visible;
+  color: hsl(154, 59%, 51%);
+}
+.form__control.error small {
+  visibility: visible;
+  color: hsl(0, 100%, 74%);
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(images/bg-intro-desktop.png);
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info__container {
+    flex: 0.35;
+  }
+  .info__container > h1 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .info__container > p {
+    text-align: left;
+    padding: 0;
+  }
+  .form__container {
+    flex: 0.55;
+    margin-left: 3.5rem;
+  }
+  form {
+    padding: 2.3rem 0;
+  }
+}
+@media (min-width: 1440px) {
+  .info__container {
+    flex: 0.35;
+  }
+  .form__container {
+    flex: 0.45;
+    margin-left: 3.5rem;
+  }
+  .info__container > h1 {
+    font-size: 3rem;
+  }
+}

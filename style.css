@@ -178,7 +178,7 @@ form p > a {
     flex: 0.35;
   }
   .form__container {
-    flex: 0.45;
+    flex: 0.5;
     margin-left: 3.5rem;
   }
   .info__container > h1 {
